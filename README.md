@@ -45,4 +45,5 @@ If the user is authenticated, they can sign out through the profile dropdown in 
 
 Conclusion:
 This Netflix clone mimics the essential features of Netflix, including dynamic content loading, a responsive UI, user authentication, and navigation between different sections of the app. It is a solid starting point for building a functional streaming platform or any content-based web app.
+
 ![image](https://github.com/user-attachments/assets/a274e178-f52b-409c-85ac-6e3cd402365d)
