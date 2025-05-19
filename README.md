@@ -50,3 +50,4 @@ This Netflix clone mimics the essential features of Netflix, including dynamic c
 ![image](https://github.com/user-attachments/assets/fbf219de-ccf1-48a3-9975-24e48d7026c9)
 
 ![image](https://github.com/user-attachments/assets/a274e178-f52b-409c-85ac-6e3cd402365d)
+![image](https://github.com/user-attachments/assets/97a9af4e-1561-4b9b-8d6e-cbeaf9c61feb)
