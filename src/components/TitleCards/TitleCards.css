@@ -1,71 +1,141 @@
 .title-cards {
   margin-top: 50px;
   margin-bottom: 30px;
+  animation: fadeIn 0.8s ease-in-out;
 }
+
 .title-cards h2 {
-  margin-bottom: 8px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .card-list {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   max-width: 100%;
   padding: 0 20px;
-  overflow-x: scroll;
+  overflow-x: auto;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
 .card-list::-webkit-scrollbar {
   display: none;
 }
+
 .card {
   position: relative;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
 }
 
 .card img {
   width: 280px;
-  border-radius: 4px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
   cursor: pointer;
   transform: translateY(10px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover img {
   transform: translateY(0px) scale(1.05);
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
 }
+
 .card-list .card {
   position: relative;
 }
+
 .card-list .card p {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
   text-decoration: none;
   color: white;
+  font-weight: 500;
+  font-size: 14px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: 20px 10px 10px;
+  border-radius: 0 0 8px 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
 }
+
+.card:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 800px) {
   .title-cards {
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   .title-cards h2 {
     font-size: 20px;
+    margin-bottom: 12px;
   }
-  .card-list img {
-    width: 200px;
+  .card-list {
+    gap: 12px;
+    padding: 0 15px;
   }
-  .card-list p {
+  .card img {
+    width: 220px;
+    height: 125px;
+  }
+  .card-list .card p {
     font-size: 12px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 15px 8px 8px;
   }
 }
+
 @media (max-width: 500px) {
+  .title-cards {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
   .title-cards h2 {
-    font-size: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
   }
-  .card-list img {
-    width: 165px;
+  .card-list {
+    gap: 10px;
+    padding: 0 10px;
   }
-  .card-list p {
-    font-size: 10px;
+  .card img {
+    width: 180px;
+    height: 100px;
+  }
+  .card-list .card p {
+    font-size: 11px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    padding: 12px 6px 6px;
   }
 }
 
