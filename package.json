@@ -11,11 +11,6 @@
   },
   "dependencies": {
     "firebase": "^10.12.5",
-    "netflix-clone": "file:",
-    "netflix-clone-Hanna": "file:",
-    "netflix-clone-hanna-me": "file:",
-    "netflix-clone-HannaM-e": "file:",
-    "netflix-clone-HannaMe": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-firebase-hooks": "^5.1.1",
